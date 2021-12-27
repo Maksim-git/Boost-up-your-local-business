@@ -5,10 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Local Business</title>
 </head>
-<body>
-    
+    <header class="main-header centering-content">
+        <a href="#">
+            <img class="margin" src="./images/png/logo_header.png" alt="Logo company">
+        </a>
+        <nav>
+            <ul class="bulleted-list">
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Home</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Service</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">About us</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Pricing table</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">How it work</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Happy clients</a></li>
+                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Container main -->
+
+    <main class="container__main">
+        <div class="centering-content display-content__flex ">
+            <h1 class="txt__heading_styles txt-uppercase">Boost up your local business</h1>
+            <p class="txt__paragraph_style">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+                <form class="request-form">
+                    <input class="request-form__input request-form__input_full-name" type="text" placeholder="Full Name">
+                    <input class="request-form__input request-form__input_email" type="email" placeholder="Email Address">
+                    <input class="request-form__input request-form__input_phone" type="text" placeholder="Phone Number">
+                    <button class="txt-uppercase request-form_button">Request a quote</button>
+                </form>
+
+            <div>
+                <img class="img-laptop_weight" src="./images/png/Laptop.png" alt="Laptop">
+                <div class="button__circle_flex">
+                    <button class="button__circle button__cercle-active"></button>
+                    <button class="button__circle"></button>
+                    <button class="button__circle"></button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,145 @@
+@import "./scss/reset";
+@import "./scss/google-fonts";
+
+// colors page
+$white: white;
+$black: black;
+$grey: #868686;
+$yellow: #ffbb42;
+$light-blue: #709dca;
+
+.centering-content {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+.margin {
+  margin: 20px;
+}
+
+.margin-top-bottom {
+  margin: 10px 0;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.display-content__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+// Header style
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bulleted-list {
+  display: flex;
+  flex-wrap: wrap;
+  .bulleted-list__link {
+    padding: 10px 20px;
+    color: $grey;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    transition: 0.3s;
+  }
+  .bulleted-list__link:hover {
+    background-color: $yellow;
+    color: $white;
+  }
+}
+// container main
+.container__main {
+  background-color: $light-blue;
+  max-height: calc(1700px - 1122px);
+}
+
+.txt__heading_styles {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  color: $white;
+  // margin-top: 82px;
+  // margin-bottom: 16px;
+  margin: 82px 15px 16px;
+}
+
+.txt__paragraph_style {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: $white;
+  // margin-bottom: 27px;
+  margin: 0 15px 27px;
+}
+
+.request-form {
+  margin-bottom: 67px;
+  .request-form__input {
+    // box-sizing: border-box;
+    border-radius: 4px;
+    width: 238px;
+    height: 41px;
+    border: none;
+    // margin-right: 10px;
+    margin: 10px 0px 10px 10px;
+    padding-left: 40px;
+    font-size: 13px;
+  }
+  .request-form__input_full-name {
+    background-image: url("../images/svg/person-input_full-name.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+  }
+
+  .request-form__input_email {
+    background-image: url("../images/png/sms-input_email.png");
+    background-repeat: no-repeat;
+    background-position: 10px 16px;
+  }
+  .request-form__input_phone {
+    background-image: url("../images/png/phone-input.png");
+    background-repeat: no-repeat;
+    background-position: 10px 16px;
+  }
+  .request-form_button {
+    background-color: $yellow;
+    color: $white;
+    padding: 14px 42px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+}
+.request-form_button:hover {
+  background-color: #eba72f;
+  cursor: pointer;
+}
+.button__circle_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 23px 0 74px;
+  .button__circle {
+    height: 16px;
+    border-radius: 13px;
+    border: 2px solid #dedfe0;
+    margin: 0 9px;
+  }
+  .button__cercle-active {
+    border: 2px solid #1ca8dd;
+  }
+}
+
+.img-laptop_weight {
+  width: 100%;
+}
