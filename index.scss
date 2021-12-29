@@ -6,7 +6,7 @@ $white: white;
 $black: black;
 $grey: #868686;
 $yellow: #ffbb42;
-$light-blue: #709dca;
+$light-blue: #b5bbc1;
 $orange: #eba72f;
 $light-gray: #dedfe0;
 $blue: #1ca8dd;
@@ -14,6 +14,11 @@ $dark-blue: #394b50;
 $dark-red: #7b7b7b;
 $yellow-orange: #ffc155;
 $light-orange: #e7ad48;
+$light-sky-blue: #e7edf3;
+$oslo-gray: #75888d;
+$geyser: #ccd5df;
+$similar: #ced4db;
+$grayish-blue: #709dca;
 
 .centering-content {
   margin: 0 auto;
@@ -65,7 +70,7 @@ $light-orange: #e7ad48;
 
 // container main
 .container__main {
-  background: linear-gradient(180deg, $light-blue 75%, transparent 1%);
+  background: linear-gradient(180deg, $grayish-blue 75%, transparent 1%);
 }
 
 .txt__heading_styles {
@@ -207,45 +212,189 @@ $light-orange: #e7ad48;
   flex-wrap: wrap;
   min-height: 623px;
   background-color: $yellow-orange;
-  margin-bottom: 150px;
-}
-
-.test {
-  // width: 858px;
+  // margin-bottom: 98px;
+  justify-content: center;
 }
 
 .container__aboute-us {
   max-width: 475px;
-  margin: 15px 133px 15px;
+  margin: 48px 266px 94px 70px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  &-h4 {
+  justify-content: space-evenly;
+  &_h4 {
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     margin-bottom: 18px;
     color: $white;
   }
-  &-paragraph {
+  &_paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 22px;
     color: $white;
     font-weight: 400;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
-  &-button {
+  &_button {
     width: 144px;
     height: 45px;
     background-color: $yellow-orange;
     border: 1px solid $light-orange;
     color: $white;
     transition: 0.3s;
+    border-radius: 3px;
     &:hover {
       background-color: $white;
       color: $black;
     }
   }
+}
+.block__padding_width {
+  padding: 0 15px;
+  width: 95%;
+}
+.display__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.margin__right {
+  margin-right: 20px;
+}
+.margin__bottom {
+  margin-bottom: 194px;
+}
+// price cards
+.bacground-price-cards {
+  padding-top: 98px;
+  background-color: $light-sky-blue;
+  margin-bottom: 130px;
+}
+
+.block__price-cards {
+  background-color: $white;
+  height: 441px;
+  width: 367px;
+  border: 1px solid $geyser;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+  margin: 10px 0;
+  &:hover {
+    background-color: $grayish-blue;
+  }
+  &_heading {
+    color: $oslo-gray;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 7px;
+  }
+  &_dollar {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: $yellow;
+    margin-right: 3px;
+  }
+  &_number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    color: $yellow;
+  }
+  &_paragraph {
+    color: $oslo-gray;
+    margin-top: 2px;
+    border-bottom: 1px solid $similar;
+    padding: 0px 107px 50px;
+  }
+  &_h5-first {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    color: $light-blue;
+    padding: 12px 105px 12px;
+    border-bottom: 1px solid $similar;
+  }
+  &_h5-second {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    color: $light-blue;
+    padding: 12px 87px 12px;
+    border-bottom: 1px solid $similar;
+  }
+  &_h5-third {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    color: $light-blue;
+    margin: 12px 0 31px;
+  }
+  &_button {
+    width: 131px;
+    height: 42px;
+    background-color: $yellow-orange;
+    border: 1px solid $light-orange;
+    color: $white;
+    transition: 0.3s;
+    border-radius: 3px;
+    margin-bottom: 48px;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+.center-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-block_header {
+  color: $dark-blue;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 15px 16px;
+}
+.card-block_paragraph {
+  color: $oslo-gray;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 15px 84px;
+}
+
+.block__price-cards:hover .block__price-cards_heading {
+  color: $white;
+}
+.block__price-cards:hover .block__price-cards_dollar {
+  color: $white;
+}
+.block__price-cards:hover .block__price-cards_number {
+  color: $white;
+}
+.block__price-cards:hover .block__price-cards_paragraph {
+  color: $white;
+}
+
+.block__price-cards:hover .block__price-cards_h5-first {
+  color: #c2e1ff;
+}
+.block__price-cards:hover .block__price-cards_h5-second {
+  color: #c2e1ff;
+}
+.block__price-cards:hover .block__price-cards_h5-third {
+  color: #c2e1ff;
 }
