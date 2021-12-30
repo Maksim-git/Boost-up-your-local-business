@@ -6,7 +6,8 @@ $white: white;
 $black: black;
 $grey: #868686;
 $yellow: #ffbb42;
-$light-blue: #b5bbc1;
+$white-blue: #b5bbc1;
+$light-blue: #c2e1ff;
 $orange: #eba72f;
 $light-gray: #dedfe0;
 $blue: #1ca8dd;
@@ -285,9 +286,11 @@ $grayish-blue: #709dca;
   justify-content: center;
   flex-direction: column;
   transition: 0.3s;
-  margin: 10px 0;
+  margin: 15px 0;
+  transform: scale3d(1, 1, 1);
   &:hover {
     background-color: $grayish-blue;
+    transform: scale3d(1, 1.1, 1);
   }
   &_heading {
     color: $oslo-gray;
@@ -320,7 +323,7 @@ $grayish-blue: #709dca;
     font-style: normal;
     font-weight: normal;
     font-size: 13.5px;
-    color: $light-blue;
+    color: $white-blue;
     padding: 12px 105px 12px;
     border-bottom: 1px solid $similar;
   }
@@ -328,7 +331,7 @@ $grayish-blue: #709dca;
     font-style: normal;
     font-weight: normal;
     font-size: 13.5px;
-    color: $light-blue;
+    color: $white-blue;
     padding: 12px 87px 12px;
     border-bottom: 1px solid $similar;
   }
@@ -336,7 +339,7 @@ $grayish-blue: #709dca;
     font-style: normal;
     font-weight: normal;
     font-size: 13.5px;
-    color: $light-blue;
+    color: $white-blue;
     margin: 12px 0 31px;
   }
   &_button {
@@ -390,11 +393,25 @@ $grayish-blue: #709dca;
 }
 
 .block__price-cards:hover .block__price-cards_h5-first {
-  color: #c2e1ff;
+  color: $light-blue;
 }
 .block__price-cards:hover .block__price-cards_h5-second {
-  color: #c2e1ff;
+  color: $light-blue;
 }
 .block__price-cards:hover .block__price-cards_h5-third {
-  color: #c2e1ff;
+  color: $light-blue;
+}
+// block HOW IT WORKS
+.block__cooperation--h5 {
+  color: $dark-blue;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+.block__cooperation--h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 83px;
 }

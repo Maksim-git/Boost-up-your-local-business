@@ -485,11 +485,15 @@ body {
           flex-direction: column;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 10px 0;
+  margin: 15px 0;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
 }
 
 .block__price-cards:hover {
   background-color: #709dca;
+  -webkit-transform: scale3d(1, 1.1, 1);
+          transform: scale3d(1, 1.1, 1);
 }
 
 .block__price-cards_heading {
@@ -621,4 +625,19 @@ body {
 
 .block__price-cards:hover .block__price-cards_h5-third {
   color: #c2e1ff;
+}
+
+.block__cooperation--h5 {
+  color: #394b50;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.block__cooperation--h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 83px;
 }
