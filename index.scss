@@ -92,48 +92,51 @@ $grayish-blue: #709dca;
 
 .request-form {
   margin-bottom: 67px;
-}
-.request-form__input {
-  border-radius: 4px;
-  width: 238px;
-  height: 41px;
-  border: none;
-  margin: 10px 0px 10px 8px;
-  padding-left: 40px;
-  font-size: 13px;
-  &_full-name {
-    background-image: url("../images/svg/person-input_full-name.svg");
-    background-repeat: no-repeat;
-    background-position: 10px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__input {
+    border-radius: 4px;
+    width: 238px;
+    height: 41px;
+    border: none;
+    margin: 10px 0px 10px 8px;
+    padding-left: 40px;
+    font-size: 13px;
+    &_full-name {
+      background-image: url("../images/svg/person-input_full-name.svg");
+      background-repeat: no-repeat;
+      background-position: 10px 13px;
+    }
+    &_email {
+      background-image: url("../images/png/sms-input_email.png");
+      background-repeat: no-repeat;
+      background-position: 10px 16px;
+    }
+    &_phone {
+      background-image: url("../images/png/phone-input.png");
+      background-repeat: no-repeat;
+      background-position: 10px 16px;
+    }
   }
-  &_email {
-    background-image: url("../images/png/sms-input_email.png");
-    background-repeat: no-repeat;
-    background-position: 10px 16px;
-  }
-  &_phone {
-    background-image: url("../images/png/phone-input.png");
-    background-repeat: no-repeat;
-    background-position: 10px 16px;
-  }
-}
-
-.request-form_button {
-  background-color: $yellow;
-  color: $white;
-  padding: 14px 42px;
-  border: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  border-radius: 4px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-right: 7px;
-  transition: 0.3s;
-  &:hover {
-    background-color: $orange;
-    cursor: pointer;
+  &_button {
+    background-color: $yellow;
+    color: $white;
+    padding: 14px 42px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    // margin-top: 10px;
+    margin-right: 7px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $orange;
+      cursor: pointer;
+    }
   }
 }
 
@@ -156,6 +159,7 @@ $grayish-blue: #709dca;
 
 .img-laptop_weight {
   width: 100%;
+  margin: 10px;
 }
 
 // Secthion our services
@@ -250,6 +254,7 @@ $grayish-blue: #709dca;
     &:hover {
       background-color: $white;
       color: $black;
+      cursor: pointer;
     }
   }
 }
@@ -353,6 +358,7 @@ $grayish-blue: #709dca;
     margin-bottom: 48px;
     &:hover {
       background-color: $orange;
+      cursor: pointer;
     }
   }
 }
@@ -407,11 +413,161 @@ $grayish-blue: #709dca;
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
-  margin-bottom: 14px;
+  margin: 5px 15px 14px;
 }
 .block__cooperation--h6 {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  margin-bottom: 83px;
+  margin: 0 15px 83px;
+}
+
+.block__cooperation_steps {
+  max-width: 217px;
+  height: 279px;
+  margin: 11px;
+  justify-content: flex-end;
+  transform: scale(1, 1);
+  &--transform {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &--h4 {
+    margin: 76px 5px 21px;
+    color: $dark-blue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &--paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $dark-red;
+    text-align: center;
+  }
+}
+.block__cooperation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 103px;
+  &--buttom {
+    background-color: $yellow;
+    width: 165px;
+    height: 46px;
+    color: $white;
+    border-radius: 3px;
+    border: none;
+    &:hover {
+      background-color: $orange;
+      cursor: pointer;
+    }
+  }
+}
+.block__arrow {
+  width: 45px;
+  position: relative;
+  &--top {
+    position: absolute;
+    left: -44px;
+  }
+  &--bottom {
+    bottom: 127px;
+    position: absolute;
+    left: -42px;
+  }
+}
+
+@media screen and (max-width: 1091px) {
+  .block__arrow {
+    display: none;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 149px;
+}
+// customer-reviews
+.wrrap-customer-reviews {
+  background-color: $yellow-orange;
+}
+
+.section__header {
+  text-align: center;
+  &--h4 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: $white;
+    margin: 66px 0 16px;
+  }
+  &--paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: $white;
+    margin-bottom: 92px;
+  }
+}
+
+.customer-reviews {
+  display: flex;
+  margin: 10px 18px;
+  background-color: $white;
+  border: none;
+  border-radius: 2px;
+  &--img {
+    border-radius: 50%;
+    margin: 49px 13px 0 20px;
+  }
+}
+.display__flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-message {
+  padding-top: 50px;
+  &__paragraph {
+    padding: 0 5px 0 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $dark-red;
+    max-width: 344px;
+  }
+  &__h4 {
+    padding-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    &--orange {
+      color: $orange;
+    }
+    &--dark-red {
+      color: $dark-red;
+    }
+  }
+  &__quotes {
+    color: $dark-red;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 23px;
+    // &--first {
+    // }
+    // &--second {
+    // }
+  }
 }
