@@ -168,6 +168,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-header {
@@ -291,6 +293,18 @@ body {
   cursor: pointer;
 }
 
+.button__circle {
+  height: 16px;
+  border-radius: 13px;
+  border: 2px solid #dedfe0;
+  background-color: white;
+  margin: 0 9px;
+}
+
+.button__circle-active {
+  border: 2px solid #1ca8dd;
+}
+
 .button__circle_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,17 +316,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 23px 0 74px;
-}
-
-.button__circle {
-  height: 16px;
-  border-radius: 13px;
-  border: 2px solid #dedfe0;
-  margin: 0 9px;
-}
-
-.button__circle-active {
-  border: 2px solid #1ca8dd;
 }
 
 .img-laptop_weight {
@@ -982,4 +985,86 @@ body {
 .border-bottom {
   border-bottom: 1px solid #e3e7ec;
   margin-bottom: 50px;
+}
+
+.footer__nav {
+  margin-bottom: 21px;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav-list__link {
+  margin: 15px 20px;
+  color: #394b50;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.foter__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.foter__phone-img {
+  margin-right: 18px;
+}
+
+.foter__phone-number {
+  color: #394b50;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.secthion__messengers {
+  margin-bottom: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secthion__messengers-img {
+  margin: 10px 8px;
+}
+
+.main-footer {
+  background-color: #709dca;
+}
+
+.main-footer__paragraph {
+  color: white;
+  margin: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
 }

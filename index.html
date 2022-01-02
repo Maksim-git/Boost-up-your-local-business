@@ -30,16 +30,15 @@
     <!-- Container main -->
 
     <main class="container__main">
-        <div class="centering-content display-content__flex ">
+        <div class="centering-content display-content__flex">
             <h1 class="txt__heading_styles txt-uppercase">Boost up your local business</h1>
             <p class="txt__paragraph_style">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
-                <form class="request-form">
-                    <input class="request-form__input request-form__input_full-name" type="text" placeholder="Full Name">
-                    <input class="request-form__input request-form__input_email" type="email" placeholder="Email Address">
-                    <input class="request-form__input request-form__input_phone" type="text" placeholder="Phone Number">
+                <form class="request-form" action="https://fom.in.ua/echo" method="POST">
+                    <input class="request-form__input request-form__input_full-name" type="text"  name="full_name" id="email_data" required placeholder="Full Name">
+                    <input class="request-form__input request-form__input_email" type="email"  name="email" id="email_data" required placeholder="Email Address">
+                    <input class="request-form__input request-form__input_phone" type="text" required placeholder="Phone Number">
                     <button class="txt-uppercase request-form_button">Request a quote</button>
                 </form>
-
             <div>
                 <img class="img-laptop_weight" src="./images/png/Laptop.png" alt="Laptop">
                 <div class="button__circle_flex">
@@ -341,5 +340,41 @@
         </div>
         <div class="border-bottom"></div>
     </section>
+    <!-- navigation footer -->
+    <section class="display-content__flex centering-content">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">Home</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">Service</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">About us</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">Pricing table</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">How it work</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">Happy clients</a></li>
+                <li><a class="txt-uppercase footer__nav-list__link" href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="foter__phone">
+            <img class="foter__phone-img" src="./images/png/phone-footer.png" alt="Phone">
+            <a class="foter__phone-number" href="tel:+987 9976 999">+987 9976 999</a>
+        </div>
+
+        <div class="secthion__messengers">
+            <a href="#">
+                <img class="secthion__messengers-img" src="./images/png/twitter.png" alt="Twitter">
+            </a>
+            <a href="#">
+                <img class="secthion__messengers-img" src="./images/png/facebook.png" alt="Facebook">
+            </a>            <a href="#">
+                <img class="secthion__messengers-img" src="./images/png/google.png" alt="Google">
+            </a>            <a href="#">
+                <img class="secthion__messengers-img"src="./images/png/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+    </section>
+    <!-- section Footer -->
+    <footer class="main-footer display-content__flex">
+        <p class="main-footer__paragraph">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+    </footer>
+
 </body>
 </html>
