@@ -1,380 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Local Business</title>
-</head>
+  </head>
+  <div class="full-preloader fade-out">
+    <div class="full-preloader__logo">
+      <svg class="logo-circular" viewBox="25 25 50 50">
+        <circle class="logo-circular-path-1" cx="50" cy="50" r="22"></circle>
+        <circle class="logo-circular-path-2" cx="50" cy="50" r="16"></circle>
+        <circle class="logo-circular-path-3" cx="50" cy="50" r="10"></circle>
+      </svg>
+    </div>
+  </div>
+  <body>
     <header class="main-header centering-content">
-        <a href="#">
-            <img class="margin" src="./images/png/logo_header.png" alt="Logo company">
-        </a>
-        <nav>
-            <ul class="bulleted-list">
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Home</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Service</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">About us</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Pricing table</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">How it work</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Happy clients</a></li>
-                <li class="margin-top-bottom"><a class="bulleted-list__link txt-uppercase" href="#">Contact us</a></li>
-            </ul>
-        </nav>
+      <div
+        class="logo logo-start-anim margin"
+        id="header-logo"
+        style="opacity: 1"
+      >
+        <svg class="logo-circular" viewBox="25 25 50 50">
+          <circle class="logo-circular-path-1" cx="50" cy="50" r="22"></circle>
+          <circle class="logo-circular-path-2" cx="50" cy="50" r="16"></circle>
+          <circle class="logo-circular-path-3" cx="50" cy="50" r="10"></circle>
+        </svg>
+      </div>
+
+      <nav>
+        <ul class="bulleted-list">
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#">Home</a>
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#">Service</a>
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#">About us</a>
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#"
+              >Pricing table</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#"
+              >How it work</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#"
+              >Happy clients</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="bulleted-list__link txt-uppercase" href="#">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- Container main -->
-
     <main class="container__main">
-        <div class="centering-content display-content__flex">
-            <h1 class="txt__heading_styles txt-uppercase">Boost up your local business</h1>
-            <p class="txt__paragraph_style">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
-                <form class="request-form" action="https://fom.in.ua/echo" method="POST">
-                    <input class="request-form__input request-form__input_full-name" type="text"  name="full_name" id="email_data" required placeholder="Full Name">
-                    <input class="request-form__input request-form__input_email" type="email"  name="email" id="email_data" required placeholder="Email Address">
-                    <input class="request-form__input request-form__input_phone" type="text" required placeholder="Phone Number">
-                    <button class="txt-uppercase request-form_button">Request a quote</button>
-                </form>
-            <div>
-                <img class="img-laptop_weight" src="./images/png/Laptop.png" alt="Laptop">
-                <div class="button__circle_flex">
-                    <button class="button__circle button__circle-active"></button>
-                    <button class="button__circle"></button>
-                    <button class="button__circle"></button>
-                </div>
-            </div>
+      <div class="centering-content display-content__flex">
+        <h1 class="txt__heading_styles txt-uppercase">
+          Boost up your local business
+        </h1>
+        <p class="txt__paragraph_style">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum typesetting
+        </p>
+        <form
+          class="request-form"
+          action="https://fom.in.ua/echo"
+          method="POST"
+        >
+          <input
+            class="request-form__input request-form__input_full-name"
+            type="text"
+            name="full_name"
+            id="email_data"
+            required
+            placeholder="Full Name"
+          />
+          <input
+            class="request-form__input request-form__input_email"
+            type="email"
+            name="email"
+            id="email_data"
+            required
+            placeholder="Email Address"
+          />
+          <input
+            class="request-form__input request-form__input_phone"
+            type="text"
+            name="phone"
+            id="phone_data"
+            required
+            placeholder="Phone Number"
+          />
+          <button class="txt-uppercase request-form_button">
+            Request a quote
+          </button>
+        </form>
+        <div>
+          <img
+            class="img-laptop_weight"
+            src="./images/png/Laptop.png"
+            alt="Laptop"
+          />
+          <div class="button__circle_flex">
+            <button class="button__circle button__circle-active"></button>
+            <button class="button__circle"></button>
+            <button class="button__circle"></button>
+          </div>
         </div>
+      </div>
     </main>
-
     <!-- Secthion our services -->
     <div class="centering-content">
-        <div class="display-content__flex ">
-            <h2 class="txt-uppercase h2-styles">Our services</h2>
-            <p class="paragraph-style">Lorem Ipsum is simply dummy Business industry.</p>
+      <div class="display-content__flex">
+        <h2 class="txt-uppercase h2-styles">Our services</h2>
+        <p class="paragraph-style">
+          Lorem Ipsum is simply dummy Business industry.
+        </p>
+      </div>
+      <div class="container__with-sections">
+        <div class="section__content">
+          <img src="./images/png/clock.png" alt="Clock" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">
+              Font-awesome icons
+            </h4>
+            <p class="section__content-paragraph">
+              Lorem Ipsum is simply dum my text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer.
+            </p>
+          </div>
         </div>
 
-        <div class="container__with-sections">
-            <div class="section__content">
-                <img src="./images/png/clock.png" alt="Clock">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Font-awesome icons</h4>
-                    <p class="section__content-paragraph">Lorem Ipsum is simply dum my text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever 
-                        since the 1500s, when an unknown printer.</p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <img src="./images/png/settings.png" alt="Settings">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Fully responsive design</h4>
-                    <p class="section__content-paragraph">Many desktop publishing packages and web page editors now use 
-                        Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover 
-                        many web sites still in their infancy.</p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <img src="./images/png/house.png" alt="House">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Working contact form</h4>
-                    <p class="section__content-paragraph">Many desktop publishing packages and web page editors now use Lorem 
-                        Ipsum as their default model text, and a search for 'lorem ipsum' will 
-                        uncover many sites still in their infancy.</p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <img src="./images/png/laptop-secthion.png" alt="Laptop">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Repina ready icons here</h4>
-                    <p class="section__content-paragraph">There are many variations of passages of Lorem Ipsum available, but the 
-                        majority have suffered alteration in some form, by injected humouror 
-                        randomised words which don't look even slightly believable. 
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there .</p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <img src="./images/png/parentheses.png" alt="Parentheses">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Friendly code</h4>
-                    <p class="section__content-paragraph">Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-                        exact original form, accompanied by English versions from the 1914 
-                        translation by H. Rackham.</p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <img src="./images/png/dollar.png" alt="Dollar">
-                <div class="section__content-txt">
-                    <h4 class="txt-uppercase section__content-h4 ">Flat trendy landing page design</h4>
-                    <p class="section__content-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer.</p>
-                </div>
-            </div>
+        <div class="section__content">
+          <img src="./images/png/settings.png" alt="Settings" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">
+              Fully responsive design
+            </h4>
+            <p class="section__content-paragraph">
+              Many desktop publishing packages and web page editors now use
+              Lorem Ipsum as their default model text, and a search for 'lorem
+              ipsum' will uncover many web sites still in their infancy.
+            </p>
+          </div>
         </div>
+
+        <div class="section__content">
+          <img src="./images/png/house.png" alt="House" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">
+              Working contact form
+            </h4>
+            <p class="section__content-paragraph">
+              Many desktop publishing packages and web page editors now use
+              Lorem Ipsum as their default model text, and a search for 'lorem
+              ipsum' will uncover many sites still in their infancy.
+            </p>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <img src="./images/png/laptop-secthion.png" alt="Laptop" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">
+              Repina ready icons here
+            </h4>
+            <p class="section__content-paragraph">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humouror randomised words which don't look even slightly
+              believable. If you are going to use a passage of Lorem Ipsum, you
+              need to be sure there .
+            </p>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <img src="./images/png/parentheses.png" alt="Parentheses" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">Friendly code</h4>
+            <p class="section__content-paragraph">
+              Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+              exact original form, accompanied by English versions from the 1914
+              translation by H. Rackham.
+            </p>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <img src="./images/png/dollar.png" alt="Dollar" />
+          <div class="section__content-txt">
+            <h4 class="txt-uppercase section__content-h4">
+              Flat trendy landing page design
+            </h4>
+            <p class="section__content-paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-<!-- container__aboute-us -->
+    <!-- container__aboute-us -->
     <div class="container__bg">
-            <div class="display__flex">
-                <img class="block__padding_width" src="./images/png/picture-table_chair.png" alt="Table">
-            </div>
-            <div class="container__aboute-us ">
-                <h4 class="txt-uppercase container__aboute-us_h4">About us</h4>
-                <p class="container__aboute-us_paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                    unknown printer took a galley of type and scrambled it to make a type specimen 
-                    book. It has survived not only five centuries, but also the leap into electronic 
-                    typesetting, remaining essentially unchanged. It was popularised in the ore recently 
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem 
-                    Ipsum</p>
-                <button class="txt-uppercase container__aboute-us_button">Read more</button>
-            </div>
+      <div class="display__flex_about-us">
+        <img
+          class="block__padding_width"
+          src="./images/png/picture-table_chair.png"
+          alt="Table"
+        />
+      </div>
+      <div class="container__aboute-us">
+        <h4 class="txt-uppercase container__aboute-us_h4">About us</h4>
+        <p class="container__aboute-us_paragraph">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the ore
+          recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum
+        </p>
+        <button class="txt-uppercase container__aboute-us_button">
+          Read more
+        </button>
+      </div>
     </div>
     <!-- price cards -->
-    <section class="bacground-price-cards">
-        <div class="centering-content center-align">
-            <div class="center-align">
-                <h4 class="txt-uppercase card-block_header">Choos your price</h4>
-                <p class="card-block_paragraph">Lorem Ipsum is simply dummy text of the printing typesetting .</p>
-            </div>
-            <!-- first cards -->
-                <section class="display__flex margin__bottom">
-                    <div class="block__price-cards">
-                        <h4 class="txt-uppercase block__price-cards_heading">Basic plan</h4>
-                            <div class="display__flex margin__right">
-                                <span class="block__price-cards_dollar">
-                                    $
-                                </span>
-                                <span class="block__price-cards_number">
-                                    20
-                                </span>
-                            </div>
-                            <p class="block__price-cards_paragraph">per month</p>
-                            <h5 class="txt-uppercase block__price-cards_h5-first">1 account</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-second">8 hour support</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-third">cuettom cloud services</h5>
-                            <button class="txt-uppercase block__price-cards_button">Get started</button>
-                    </div>
-        
-                    <!-- second cards -->
-                    <div class="block__price-cards">
-                        <h4 class="txt-uppercase block__price-cards_heading">Premium plan</h4>
-                            <div class="display__flex margin__right">
-                                <span class="block__price-cards_dollar">
-                                    $
-                                </span>
-                                <span class="block__price-cards_number">
-                                    42
-                                </span>
-                            </div>
-                            <p class="block__price-cards_paragraph">per month</p>
-                            <h5 class="txt-uppercase block__price-cards_h5-first">2 account</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-second">100mb storage</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-third">Custom cloud services</h5>
-                            <button class="txt-uppercase block__price-cards_button">Get started</button>
-                    </div>
-                    <!-- third card -->
-                    <div class="block__price-cards">
-                        <h4 class="txt-uppercase block__price-cards_heading">Gold plan</h4>
-                            <div class="display__flex margin__right">
-                                <span class="block__price-cards_dollar">
-                                    $
-                                </span>
-                                <span class="block__price-cards_number">
-                                    62
-                                </span>
-                            </div>
-                            <p class="block__price-cards_paragraph">per month</p>
-                            <h5 class="txt-uppercase block__price-cards_h5-first">8 account</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-second">24 hour support</h5>
-                            <h5 class="txt-uppercase block__price-cards_h5-third">Cuettom cloud services</h5>
-                            <button class="txt-uppercase block__price-cards_button">Get started</button>
-                    </div>
-                </section>
+    <div class="bacground-price-cards">
+      <div class="centering-content center-align">
+        <div class="center-align">
+          <h4 class="txt-uppercase card-block_header">Choos your price</h4>
+          <p class="card-block_paragraph">
+            Lorem Ipsum is simply dummy text of the printing typesetting .
+          </p>
         </div>
-    </section>
+        <!-- first cards -->
+        <section class="display__flex margin__bottom">
+          <div class="block__price-cards">
+            <h4 class="txt-uppercase block__price-cards_heading">Basic plan</h4>
+            <div class="display__flex margin__right">
+              <span class="block__price-cards_dollar"> $ </span>
+              <span class="block__price-cards_number"> 20 </span>
+            </div>
+            <p class="block__price-cards_paragraph">per month</p>
+            <h5 class="txt-uppercase block__price-cards_h5-first">1 account</h5>
+            <h5 class="txt-uppercase block__price-cards_h5-second">
+              8 hour support
+            </h5>
+            <h5 class="txt-uppercase block__price-cards_h5-third">
+              cuettom cloud services
+            </h5>
+            <button class="txt-uppercase block__price-cards_button">
+              Get started
+            </button>
+          </div>
+
+          <!-- second cards -->
+          <div class="block__price-cards">
+            <h4 class="txt-uppercase block__price-cards_heading">
+              Premium plan
+            </h4>
+            <div class="display__flex margin__right">
+              <span class="block__price-cards_dollar"> $ </span>
+              <span class="block__price-cards_number"> 42 </span>
+            </div>
+            <p class="block__price-cards_paragraph">per month</p>
+            <h5 class="txt-uppercase block__price-cards_h5-first">2 account</h5>
+            <h5 class="txt-uppercase block__price-cards_h5-second">
+              100mb storage
+            </h5>
+            <h5 class="txt-uppercase block__price-cards_h5-third">
+              Custom cloud services
+            </h5>
+            <button class="txt-uppercase block__price-cards_button">
+              Get started
+            </button>
+          </div>
+          <!-- third card -->
+          <div class="block__price-cards">
+            <h4 class="txt-uppercase block__price-cards_heading">Gold plan</h4>
+            <div class="display__flex margin__right">
+              <span class="block__price-cards_dollar"> $ </span>
+              <span class="block__price-cards_number"> 62 </span>
+            </div>
+            <p class="block__price-cards_paragraph">per month</p>
+            <h5 class="txt-uppercase block__price-cards_h5-first">8 account</h5>
+            <h5 class="txt-uppercase block__price-cards_h5-second">
+              24 hour support
+            </h5>
+            <h5 class="txt-uppercase block__price-cards_h5-third">
+              Cuettom cloud services
+            </h5>
+            <button class="txt-uppercase block__price-cards_button">
+              Get started
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- block HOW IT WORKS -->
     <div class="centering-content">
-        <div class="display-content__flex">
-            <h5 class="txt-uppercase block__cooperation--h5">How it works</h5>
-            <h6 class="block__cooperation--h6">Lorem Ipsum is simply dummy Business industry</h6>
-        </div>
-        <section class="display-content__flex margin-bottom">
-            <div class="block__cooperation">
-        <!-- Step 1 -->
-                <div class="block__cooperation_steps display-content__flex">
-                    <object class="block__cooperation_steps--transform" data="./images/svg/touch_id.svg"></object>
-                    <h4 class="txt-uppercase block__cooperation_steps--h4">Step 1</h4>
-                    <p class="block__cooperation_steps--paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                </div>
-                <ol class="block__arrow">
-                    <object class="block__arrow--top" data="./images/svg/Arrow_top.svg"></object>
-                </ol>
+      <div class="display-content__flex">
+        <h5 class="txt-uppercase block__cooperation--h5">How it works</h5>
+        <h6 class="block__cooperation--h6">
+          Lorem Ipsum is simply dummy Business industry
+        </h6>
+      </div>
+      <section class="display-content__flex margin-bottom">
+        <div class="block__cooperation">
+          <!-- Step 1 -->
+          <div class="block__cooperation_steps display-content__flex">
+            <object
+              class="block__cooperation_steps--transform"
+              data="./images/svg/touch_id.svg"
+            ></object>
+            <h4 class="txt-uppercase block__cooperation_steps--h4">Step 1</h4>
+            <p class="block__cooperation_steps--paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been
+            </p>
+          </div>
+          <ol class="block__arrow">
+            <object
+              class="block__arrow--top"
+              data="./images/svg/Arrow_top.svg"
+            ></object>
+          </ol>
 
-                <!-- Step 2 -->
-                <div class="block__cooperation_steps display-content__flex">
-                    <object class="block__cooperation_steps--transform" data="./images/svg/lock_svg.svg"></object>
-                    <h4 class="txt-uppercase block__cooperation_steps--h4">Step 2</h4>
-                    <p class="block__cooperation_steps--paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                </div>
-                <ol class="block__arrow">
-                    <object class="block__arrow--bottom" data="./images/svg/Arrow_buttom.png"></object>
-                </ol>
-                <!-- Step 3 -->
-                <div class="block__cooperation_steps display-content__flex">
-                    <object class="block__cooperation_steps--transform" data="./images/svg/cloud_storage.svg"></object>
-                    <h4 class="txt-uppercase block__cooperation_steps--h4">Step 3</h4>
-                    <p class="block__cooperation_steps--paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                </div>
-                <ol class="block__arrow">
-                    <object class="block__arrow--top" data="./images/svg/Arrow_top.svg"></object>
-                </ol>
-                <!-- Step 4 -->
-                <div class="block__cooperation_steps display-content__flex">
-                    <object class="block__cooperation_steps--transform" data="./images/svg/like.svg"></object>
-                    <h4 class="txt-uppercase block__cooperation_steps--h4">Step 4</h4>
-                    <p class="block__cooperation_steps--paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                </div>
-            </div>
-            <button class="txt-uppercase block__cooperation--buttom">Get start now</button>
-        </section>
+          <!-- Step 2 -->
+          <div class="block__cooperation_steps display-content__flex">
+            <object
+              class="block__cooperation_steps--transform"
+              data="./images/svg/lock_svg.svg"
+            ></object>
+            <h4 class="txt-uppercase block__cooperation_steps--h4">Step 2</h4>
+            <p class="block__cooperation_steps--paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been
+            </p>
+          </div>
+          <ol class="block__arrow">
+            <object
+              class="block__arrow--bottom"
+              data="./images/svg/Arrow_buttom.png"
+            ></object>
+          </ol>
+          <!-- Step 3 -->
+          <div class="block__cooperation_steps display-content__flex">
+            <object
+              class="block__cooperation_steps--transform"
+              data="./images/svg/cloud_storage.svg"
+            ></object>
+            <h4 class="txt-uppercase block__cooperation_steps--h4">Step 3</h4>
+            <p class="block__cooperation_steps--paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been
+            </p>
+          </div>
+          <ol class="block__arrow">
+            <object
+              class="block__arrow--top"
+              data="./images/svg/Arrow_top.svg"
+            ></object>
+          </ol>
+          <!-- Step 4 -->
+          <div class="block__cooperation_steps display-content__flex">
+            <object
+              class="block__cooperation_steps--transform"
+              data="./images/svg/like.svg"
+            ></object>
+            <h4 class="txt-uppercase block__cooperation_steps--h4">Step 4</h4>
+            <p class="block__cooperation_steps--paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been
+            </p>
+          </div>
+        </div>
+        <button class="txt-uppercase block__cooperation--buttom">
+          Get start now
+        </button>
+      </section>
     </div>
     <!-- customer-reviews -->
     <section class="wrrap-customer-reviews">
-        <div class="centering-content display-content__flex">
-            <div class="section__header">
-                <h4 class="txt-uppercase section__header--h4">Happy clients</h4>
-                <p class="section__header--paragraph">We are explain who is using our business solutions</p>
-            </div>
-            <div class="display__flex-wrap margin-bottom">
-                    <!-- first customer reviews -->
-                    <div class="customer-reviews">
-                    <div>
-                        <img class="customer-reviews--img" src="./images/png/DARWIN_MICHLE.png" alt="Photo - Darwin Michle">
-                    </div>
-                    <div class="customer-message">
-                        <p class="customer-message__paragraph">
-                            <span class="customer-message__quotes customer-message__quotes--first">“</span>
-                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book.  
-                             <span class="customer-message__quotes customer-message__quotes--second">“</span>
-                        </p>
-                        
-                        <h4 class=" txt-uppercase customer-message__h4"><span class="customer-message__h4--orange">Darwin Michle,</span> <span class="customer-message__h4--dark-red">project manager</span></h4>
-                    </div>
-                </div>
-            <!-- second customer reviews-->
-                <div class="customer-reviews">
-                    <div>
-                        <img class="customer-reviews--img" src="./images/png/MADAM_ELISABATH.png" alt="Photo - Madam Elisabath">
-                    </div>
-                    <div class="customer-message">
-                        <p class="customer-message__paragraph">
-                            <span class="customer-message__quotes customer-message__quotes--first">“</span>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book. 
-                            <span class="customer-message__quotes customer-message__quotes--second">“</span> 
-                         </p>
-                        <h4 class=" txt-uppercase customer-message__h4"><span class="customer-message__h4--orange">Madam Elisabath,</span> <span class="customer-message__h4--dark-red">creative director</span></h4>
-                    </div>
-                </div>
-                <!-- third customer reviews -->
-                <div class="customer-reviews">
-                    <div>
-                        <img class="customer-reviews--img" src="./images/png/CLIPS_ARTER.png" alt="Photo - Clips Arter">
-                    </div>
-                    <div class="customer-message">
-                        
-                        <p class="customer-message__paragraph">
-                            <span class="customer-message__quotes customer-message__quotes--first">“</span>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book.  
-                            <span class="customer-message__quotes customer-message__quotes--second">“</span>
-                        </p>
-                        <h4 class=" txt-uppercase customer-message__h4"><span class="customer-message__h4--orange">Clips Arter,</span> <span class="customer-message__h4--dark-red">lipsum directer</span></h4>
-                    </div>
-                </div>
-                <!-- fourth customer reviews -->
-                <div class="customer-reviews">
-                    <div>
-                        <img class="customer-reviews--img" src="./images/png/ZAM_CRISTAFR.png" alt="Photo - Zam Cristafr">
-                    </div>
-                    <div class="customer-message">
-                        <p class="customer-message__paragraph">
-                            <span class="customer-message__quotes customer-message__quotes--first">“</span>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make. a type specimen book. 
-                            <span class="customer-message__quotes customer-message__quotes--second">“</span> 
-                        </p>
-                        <h4 class="txt-uppercase customer-message__h4"><span class="customer-message__h4--orange">Zam Cristafr,</span> <span class="customer-message__h4--dark-red">manager</span></h4>
-                    </div>
-                </div>
-            </div>
+      <div class="centering-content display-content__flex">
+        <div class="section__header">
+          <h4 class="txt-uppercase section__header--h4">Happy clients</h4>
+          <p class="section__header--paragraph">
+            We are explain who is using our business solutions
+          </p>
         </div>
+        <div class="display__flex-wrap margin-bottom">
+          <!-- first customer reviews -->
+          <div class="customer-reviews">
+            <div>
+              <img
+                class="customer-reviews--img"
+                src="./images/png/DARWIN_MICHLE.png"
+                alt="Photo - Darwin Michle"
+              />
+            </div>
+            <div class="customer-message">
+              <p class="customer-message__paragraph">
+                <span
+                  class="customer-message__quotes customer-message__quotes--first"
+                  >“</span
+                >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make. a type specimen book.
+                <span
+                  class="customer-message__quotes customer-message__quotes--second"
+                  >“</span
+                >
+              </p>
+              <h4 class="txt-uppercase customer-message__h4">
+                <span class="customer-message__h4--orange">Darwin Michle,</span>
+                <span class="customer-message__h4--dark-red"
+                  >project manager</span
+                >
+              </h4>
+            </div>
+          </div>
+          <!-- second customer reviews-->
+          <div class="customer-reviews">
+            <div>
+              <img
+                class="customer-reviews--img"
+                src="./images/png/MADAM_ELISABATH.png"
+                alt="Photo - Madam Elisabath"
+              />
+            </div>
+            <div class="customer-message">
+              <p class="customer-message__paragraph">
+                <span
+                  class="customer-message__quotes customer-message__quotes--first"
+                  >“</span
+                >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make. a type specimen book.
+                <span
+                  class="customer-message__quotes customer-message__quotes--second"
+                  >“</span
+                >
+              </p>
+              <h4 class="txt-uppercase customer-message__h4">
+                <span class="customer-message__h4--orange"
+                  >Madam Elisabath,</span
+                >
+                <span class="customer-message__h4--dark-red"
+                  >creative director</span
+                >
+              </h4>
+            </div>
+          </div>
+          <!-- third customer reviews -->
+          <div class="customer-reviews">
+            <div>
+              <img
+                class="customer-reviews--img"
+                src="./images/png/CLIPS_ARTER.png"
+                alt="Photo - Clips Arter"
+              />
+            </div>
+            <div class="customer-message">
+              <p class="customer-message__paragraph">
+                <span
+                  class="customer-message__quotes customer-message__quotes--first"
+                  >“</span
+                >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make. a type specimen book.
+                <span
+                  class="customer-message__quotes customer-message__quotes--second"
+                  >“</span
+                >
+              </p>
+              <h4 class="txt-uppercase customer-message__h4">
+                <span class="customer-message__h4--orange">Clips Arter,</span>
+                <span class="customer-message__h4--dark-red"
+                  >lipsum directer</span
+                >
+              </h4>
+            </div>
+          </div>
+          <!-- fourth customer reviews -->
+          <div class="customer-reviews">
+            <div>
+              <img
+                class="customer-reviews--img"
+                src="./images/png/ZAM_CRISTAFR.png"
+                alt="Photo - Zam Cristafr"
+              />
+            </div>
+            <div class="customer-message">
+              <p class="customer-message__paragraph">
+                <span
+                  class="customer-message__quotes customer-message__quotes--first"
+                  >“</span
+                >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make. a type specimen book.
+                <span
+                  class="customer-message__quotes customer-message__quotes--second"
+                  >“</span
+                >
+              </p>
+              <h4 class="txt-uppercase customer-message__h4">
+                <span class="customer-message__h4--orange">Zam Cristafr,</span>
+                <span class="customer-message__h4--dark-red">manager</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--  section NEWSLETTER -->
     <section class="centering-content wrrap-newsletter">
-        <div class="display-content__flex ">
-            <h4 class="txt-uppercase wrrap-newsletter__header">Newsletter</h4>
-            <p class="wrrap-newsletter__paragraph">Lorem Ipsum is simply dummy Business industry</p>
+      <div class="display-content__flex">
+        <h4 class="txt-uppercase wrrap-newsletter__header">Newsletter</h4>
+        <p class="wrrap-newsletter__paragraph">
+          Lorem Ipsum is simply dummy Business industry
+        </p>
+      </div>
+      <form
+        class="newsletter-form"
+        action="https://fom.in.ua/echo"
+        method="POST"
+      >
+        <input
+          class="newsletter-form__fields newsletter-form__fields--img-name"
+          type="text"
+          name="name"
+          id="email_data"
+          required
+          placeholder="Name"
+        />
+        <input
+          class="newsletter-form__fields newsletter-form__fields--img-email"
+          type="email"
+          name="email"
+          id="email_data"
+          required
+          placeholder="Email Address"
+        />
+        <button class="txt-uppercase newsletter-form__button">
+          Subscribe now
+        </button>
+      </form>
+      <div class="circle__bg-map">
+        <div class="location-circle display-content__flex">
+          <h4 class="txt-uppercase location-circle__header">Address</h4>
+          <div class="display-content__flex location-circle__border-txt">
+            <span class="location-circle__txt"
+              >Business street <br />
+              Second north section <br />
+              Bavani nagar. 8876 <br />
+              Call : +987-9976-999</span
+            >
+          </div>
+          <h5 class="location-circle__email">info@businessface.com</h5>
         </div>
-        <div class="newsletter-form">
-            <input class="newsletter-form__fields newsletter-form__fields--img-name" type="text" placeholder="Name">
-            <input class="newsletter-form__fields newsletter-form__fields--img-email" type="email" placeholder="Email Address">
-            <button class="txt-uppercase newsletter-form__button">Subscribe now</button>
+        <div class="logo logo-start-anim" id="header-logo" style="opacity: 1">
+          <svg class="logo-circular" viewBox="25 25 50 50">
+            <circle
+              class="logo-circular-path-1"
+              cx="50"
+              cy="50"
+              r="22"
+            ></circle>
+            <circle
+              class="logo-circular-path-2"
+              cx="50"
+              cy="50"
+              r="16"
+            ></circle>
+            <circle
+              class="logo-circular-path-3"
+              cx="50"
+              cy="50"
+              r="10"
+            ></circle>
+          </svg>
         </div>
-        <div class="circle__bg-map">
-            <div class="location-circle display-content__flex">
-                <h4 class="txt-uppercase location-circle__header">Address</h4>
-                <div class="display-content__flex location-circle__border-txt">
-                    <span class="location-circle__txt">Business street <br> Second north section <br> Bavani nagar. 8876 <br> Call : +987-9976-999</span>
-                </div>
-                <h5 class="location-circle__email">info@businessface.com</h5>
-            </div>
-            <a href="#">
-                <img src="./images/png/logo_header.png" alt="Logo company">
-            </a>
-        </div>
-        <div class="border-bottom"></div>
+      </div>
+      <div class="border-bottom"></div>
     </section>
     <!-- navigation footer -->
     <section class="display-content__flex centering-content">
-        <nav class="footer__nav">
-            <ul class="footer__nav-list">
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">Home</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">Service</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">About us</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">Pricing table</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">How it work</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">Happy clients</a></li>
-                <li><a class="txt-uppercase footer__nav-list__link" href="#">Contact us</a></li>
-            </ul>
-        </nav>
-        <div class="foter__phone">
-            <img class="foter__phone-img" src="./images/png/phone-footer.png" alt="Phone">
-            <a class="foter__phone-number" href="tel:+987 9976 999">+987 9976 999</a>
-        </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#">Home</a>
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#">Service</a>
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#"
+              >About us</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#"
+              >Pricing table</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#"
+              >How it work</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#"
+              >Happy clients</a
+            >
+          </li>
+          <li class="margin-top-bottom">
+            <a class="txt-uppercase footer__nav-list__link" href="#"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="foter__phone">
+        <img
+          class="foter__phone-img"
+          src="./images/png/phone-footer.png"
+          alt="Phone"
+        />
+        <a class="foter__phone-number" href="tel:+987 9976 999"
+          >+987 9976 999</a
+        >
+      </div>
 
-        <div class="secthion__messengers">
-            <a href="#">
-                <img class="secthion__messengers-img" src="./images/png/twitter.png" alt="Twitter">
-            </a>
-            <a href="#">
-                <img class="secthion__messengers-img" src="./images/png/facebook.png" alt="Facebook">
-            </a>            <a href="#">
-                <img class="secthion__messengers-img" src="./images/png/google.png" alt="Google">
-            </a>            <a href="#">
-                <img class="secthion__messengers-img"src="./images/png/linkedin.png" alt="Linkedin">
-            </a>
-        </div>
+      <div class="secthion__messengers">
+        <a href="#">
+          <img
+            class="secthion__messengers-img"
+            src="./images/png/twitter.png"
+            alt="Twitter"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="secthion__messengers-img"
+            src="./images/png/facebook.png"
+            alt="Facebook"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="secthion__messengers-img"
+            src="./images/png/google.png"
+            alt="Google"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="secthion__messengers-img"
+            src="./images/png/linkedin.png"
+            alt="Linkedin"
+          />
+        </a>
+      </div>
     </section>
     <!-- section Footer -->
     <footer class="main-footer display-content__flex">
-        <p class="main-footer__paragraph">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+      <p class="main-footer__paragraph">
+        All contents © copyright 2014 Business Theme. All rights reserved
+        Designed by : akhilwebfolio
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
