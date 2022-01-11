@@ -354,6 +354,7 @@ $shade-gray: #e3e7ec;
     color: $white;
     transition: 0.3s;
     border-radius: 3px;
+    margin: 15px 0;
     &:hover {
       background-color: $white;
       color: $black;
@@ -361,11 +362,8 @@ $shade-gray: #e3e7ec;
     }
   }
 }
-// .block__padding_width {
-//   width: 93%;
-// }
 
-// TEST my
+// container__aboute-us
 .aboute-us {
   background-color: $yellow-orange;
   min-height: 623px;
@@ -406,18 +404,8 @@ $shade-gray: #e3e7ec;
 .row {
   display: flex;
   flex-wrap: wrap;
-  // padding: 0 173px 0 47px;
-  // margin: 0 200px 0 10px;
-  // justify-content: center;
   margin: -12px;
 }
-
-// @media (min-width: 992px) {
-//   .col-lg-7 {
-//     /* width: 58.3333333333%; */
-//     padding: 12px;
-//   }
-// }
 
 @media (min-width: 768px) {
   .col-md-10 {
@@ -438,7 +426,7 @@ $shade-gray: #e3e7ec;
 .col-12 {
   max-width: 475px;
   padding: 12px;
-  margin-left: 60px;
+  margin: 15px 0 15px 60px;
 }
 
 // END TEST my
