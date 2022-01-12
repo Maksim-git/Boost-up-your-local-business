@@ -27,7 +27,7 @@ $cerebellum-grey: #cbcbcb;
 $blue-bayoux: #aeb7ba;
 $shade-gray: #e3e7ec;
 
-//наследование
+//inheritance
 %font-style-weight_normal {
   font-style: normal;
   font-weight: normal;
@@ -215,7 +215,7 @@ $shade-gray: #e3e7ec;
 }
 
 .request-form {
-  margin-bottom: 67px;
+  margin-bottom: 47px;
   display: flex;
   @extend %flex-items-justify-content_center;
   flex-wrap: wrap;
@@ -304,6 +304,12 @@ $shade-gray: #e3e7ec;
   margin-bottom: 145px;
 }
 
+@media (max-width: 1098px) {
+  .container__with-sections {
+    margin-bottom: 30px;
+  }
+}
+
 .section__content {
   max-width: 512px;
   display: flex;
@@ -353,6 +359,7 @@ $shade-gray: #e3e7ec;
     color: $white;
     transition: 0.3s;
     border-radius: 3px;
+    margin: 15px 0;
     &:hover {
       background-color: $white;
       color: $black;
@@ -360,11 +367,8 @@ $shade-gray: #e3e7ec;
     }
   }
 }
-// .block__padding_width {
-//   width: 93%;
-// }
 
-// TEST my
+// container__aboute-us
 .aboute-us {
   background-color: $yellow-orange;
   min-height: 623px;
@@ -405,18 +409,8 @@ $shade-gray: #e3e7ec;
 .row {
   display: flex;
   flex-wrap: wrap;
-  // padding: 0 173px 0 47px;
-  // margin: 0 200px 0 10px;
-  // justify-content: center;
   margin: -12px;
 }
-
-// @media (min-width: 992px) {
-//   .col-lg-7 {
-//     /* width: 58.3333333333%; */
-//     padding: 12px;
-//   }
-// }
 
 @media (min-width: 768px) {
   .col-md-10 {
@@ -427,9 +421,8 @@ $shade-gray: #e3e7ec;
 
 @media (max-width: 768px) {
   .img-media {
-    width: 83%;
+    width: 100%;
     padding: 12px;
-    margin: 0 auto;
     height: 221px;
   }
 }
@@ -437,7 +430,7 @@ $shade-gray: #e3e7ec;
 .col-12 {
   max-width: 475px;
   padding: 12px;
-  margin-left: 60px;
+  margin: 15px 0 15px 60px;
 }
 
 // END TEST my
@@ -452,6 +445,12 @@ $shade-gray: #e3e7ec;
 }
 .margin__bottom {
   margin-bottom: 194px;
+}
+
+@media (max-width: 1126px) {
+  .margin__bottom_media {
+    margin-bottom: 120px;
+  }
 }
 /*price cards*/
 .bacground-price-cards {
@@ -681,12 +680,18 @@ $shade-gray: #e3e7ec;
     color: $white;
     margin: 66px 0 16px;
   }
-  &--paragraph {
+  &_paragraph {
     @extend %font-style-weight_normal;
     font-size: 30px;
     line-height: 36px;
     color: $white;
     margin: 0 15px 92px;
+  }
+}
+
+@media (max-width: 1129px) {
+  .section__header_paragraph {
+    margin-bottom: 70px;
   }
 }
 
@@ -696,8 +701,6 @@ $shade-gray: #e3e7ec;
   background-color: $white;
   border: none;
   border-radius: 2px;
-  flex-wrap: wrap;
-  justify-content: center;
   &--img {
     border-radius: 50%;
     margin: 49px 0 0 20px;
